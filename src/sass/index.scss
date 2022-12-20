@@ -1,10 +1,6 @@
 @import './common';
-@import '../partials/header.html';
-@import '../partials/hero.html';
-@import '../partials/about.html';
-@import '../partials/advantages.html';
-@import '../partials/contacts.html';
-@import '../partials/customer-reviews.html';
-@import '../partials/gallery.html';
-@import '../partials/natural.html';
-@import '../partials/footer.html';
+@import '../sass/varibles.scss';
+@import './base/base';
+@import './base/reset';
+@import './utils/mixins';
+@import './utils/varibles';
