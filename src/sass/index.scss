@@ -1,5 +1,14 @@
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/customer-reviews';
+@import './layouts/gallery';
+@import './layouts/natural';
+@import './layouts/contacts';
+@import './layouts/footer';
 @import './common';
-@import '../sass/varibles.scss';
+@import './utils/varibles';
 @import './base/base';
 @import './base/reset';
 @import './utils/mixins';
