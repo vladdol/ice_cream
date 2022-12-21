@@ -1,3 +1,9 @@
+@import './base/base';
+@import './base/reset';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './utils/varibles';
+
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/about';
@@ -7,9 +13,3 @@
 @import './layouts/natural';
 @import './layouts/contacts';
 @import './layouts/footer';
-@import './common';
-@import './utils/varibles';
-@import './base/base';
-@import './base/reset';
-@import './utils/mixins';
-@import './utils/varibles';
