@@ -1,0 +1,76 @@
+.plate-container {
+  @include min-tablet {
+    display: none;
+  }
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-start;
+
+  @include desctop {
+    margin-top: 42px;
+  }
+}
+
+.plate-ice-cream__img {
+  display: block;
+  width: 152px;
+  height: 152px;
+  z-index: 1000;
+
+  @include desctop {
+    width: 225px;
+    height: 225px;
+  }
+}
+
+.plate-container__note {
+  margin-left: 32px;
+  @extend %flex-center;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include desctop {
+    margin-left: 16px;
+    top: 18px;
+    left: 5px;
+    position: relative;
+  }
+}
+
+.plate-container__paragraf {
+  width: 139px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(17 / 12);
+  color: #fcfcfc;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @include desctop {
+    font-size: 12px;
+    line-height: calc(20 / 12);
+    width: 200px;
+  }
+}
+
+.plate-container__button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-top: 12px;
+
+  @include desctop {
+    margin-top: 24px;
+  }
+}
+
+.plate-container__arrow {
+  fill: #fff;
+
+  transition: fill 250ms linear;
+
+  .plate-container__button:hover &,
+  .plate-container__button:focus &{
+    fill: $accent-color;
+
+  }
+}
