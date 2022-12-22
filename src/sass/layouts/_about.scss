@@ -1,0 +1,119 @@
+
+.title-box{
+    width: 210px;
+    margin: 0 auto;
+}
+
+.about-title{
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: calc(22 / 18);
+text-align: center;
+text-transform: uppercase;
+color: #FCFCFC;
+}
+
+.about-title-two{
+font-family: 'Seymour One';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: calc(38 / 30);
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #FCFCFC;
+}
+
+.about-picture-box{
+    width: 280px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.picture-around{
+    width: 279px;
+    height: 278px;
+}
+
+.picture-cow{
+    position: relative;
+    top: -250px;
+}
+
+.about-item{
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: calc(21 / 12);
+text-align: center;
+letter-spacing: 0.04em;
+color: #FCFCFC;
+}
+
+.about-item-two{
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: calc(19 / 12);
+text-align: center;
+color: #FCFCFC;
+margin-bottom: 10px;
+}
+
+.about-button{
+background: #F8D24E;
+border-radius: 10px;
+border: none;
+padding: 12px 34px;
+margin: 0 auto;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: calc(18 / 14);
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+
+.button-arrow{
+    margin-left: 8px;
+}
+
+.about-benefits{
+    margin: 0 auto;
+}
+
+.benefits-item{
+    margin: 0 auto;
+}
+
+.icon-benefuts{
+    background-color: #F8D24E;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.benefits-text{
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 170%;
+text-align: center;
+color: #FCFCFC;
+}
+
+.benefits-number{
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: calc(44 / 36);
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #FCFCFC;
+}
