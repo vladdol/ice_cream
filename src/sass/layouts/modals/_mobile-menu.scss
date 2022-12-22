@@ -1,0 +1,75 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #85a279;
+  padding: 12px 32px;
+  z-index: 1000;
+
+  transform: translateX(100%);
+  transition: transform 250ms linear;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  @include desctop {
+    display: none;
+  }
+}
+
+.logo__modal {
+  position: absolute;
+  left: 32px;
+  top: 20px;
+  width: 48px;
+  height: 44px;
+
+  @include tablet {
+    font-size: 48px;
+    line-height: calc(59 / 48);
+  }
+}
+
+.menu__closer {
+  position: absolute;
+  padding: 0;
+  top: 32px;
+  right: 32px;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__svg-closer {
+  fill: #fff;
+}
+
+// nav-menu
+.nav-menu {
+  text-align: center;
+  margin-top: 140px;
+}
+
+.nav-menu__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.nav-menu__link {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(39 / 32);
+  color: #fcfcfc;
+
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: #131313;
+  }
+
+  @include tablet {
+    font-size: 48px;
+    line-height: calc(59 / 48);
+  }
+}

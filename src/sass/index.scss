@@ -1,3 +1,11 @@
+@import "./common";
+@import './utils/varibles';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './base/base';
+@import './base/reset';
+
+
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/about';
@@ -7,8 +15,15 @@
 @import './layouts/natural';
 @import './layouts/contacts';
 @import './layouts/footer';
-@import './common';
-@import './utils/varibles';
-@import './base/base';
-@import './base/reset';
-@import './utils/mixins';
+
+@import './layouts/modals/franchise-modal';
+@import './layouts/modals/mobile-menu';
+@import './layouts/modals/modal-ingredients';
+@import './layouts/modals/our-location-modal';
+@import './layouts/modals/product-card';
+@import './layouts/modals/read-more-modal';
+
+
+
+
+

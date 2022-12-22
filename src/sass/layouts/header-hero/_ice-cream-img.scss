@@ -1,0 +1,38 @@
+.container-ice-cream {
+  position: relative;
+
+  @include min-tablet {
+    margin-top: 237px;
+  }
+  @include tablet {
+    margin-top: 12px;
+  }
+  @include desctop {
+    margin-top: 67px;
+  }
+}
+
+.hero-images__img {
+  position: absolute;
+  left: 50%;
+  height: 217px;
+  bottom: 0;
+
+  transform: translate(-40%);
+
+  @include tablet {
+    transform: none;
+    bottom: 0;
+    right: 78px;
+    height: 329px;
+    left: auto;
+  }
+
+  @include desctop {
+    transform: none;
+    bottom: 0;
+    right: 78px;
+    height: 560px;
+    left: auto;
+  }
+}
