@@ -43,25 +43,42 @@ color: #FCFCFC;
   @include tablet{
     display: flex;
     margin-top: 72px;
+    width: 768px;
+  }
+  @include desctop{
+    width: 1200px;
   }
 }
-
 
 .about-picture-box{
     width: 280px;
     height: 300px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
+    @include desctop{
+        margin: 0px 100px 0px 0px;
+    }
 }
 
 .picture-around{
     width: 279px;
     height: 278px;
+    
 }
 
 .picture-cow{
     position: relative;
     top: -250px;
+    
+}
+
+.about-text{
+    @include tablet {
+        width: 336px;
+        margin-bottom: 30px;
+    }
+    @include desctop{
+        margin-right: 100px;
+    }
 }
 
 .about-item{
@@ -72,6 +89,13 @@ line-height: calc(21 / 12);
 text-align: center;
 letter-spacing: 0.04em;
 color: #FCFCFC;
+@include tablet {
+    text-align: left;
+    margin-bottom: 10px;
+}
+@include desctop{
+    width: 375px;
+}
 }
 
 .about-item-two{
@@ -82,6 +106,26 @@ line-height: calc(19 / 12);
 text-align: center;
 color: #FCFCFC;
 margin-bottom: 10px;
+@include tablet {
+    text-align: left;
+    margin-bottom: 10px;
+}
+@include desctop{
+    width: 375px;
+}
+}
+
+.about-item-three{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(19 / 12);
+    text-align: center;
+    color: #FCFCFC;
+    display: none;
+    @include tablet {
+        display: contents;
+    } 
 }
 
 .about-button{
@@ -98,10 +142,25 @@ display: flex;
 align-items: center;
 text-align: center;
 color: #000000;
+@include tablet {
+    margin: 0;
+}
 }
 
 .button-arrow{
     margin-left: 8px;
+}
+
+.about-benefits-box{
+    width: 100%;
+    @include tablet{
+        display: flex;
+        margin-top: 80px;
+    }
+}
+
+.about-benefits{
+    width: 100%;
 }
 
 .icon-benefuts{
@@ -132,5 +191,12 @@ line-height: 170%;
 text-align: center;
 color: #FCFCFC;
 margin-bottom: 28px;
+@include tablet {
+    width: 152px;
+    margin: 0 auto;
+}
+@include desctop{
+    width: 250px;
+}
 }
 
