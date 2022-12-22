@@ -2,6 +2,12 @@
 .title-box{
     width: 210px;
     margin: 0 auto;
+    @include mobile {
+        width: 450px;
+    }
+    @include desctop {
+        width: 481px;
+    }
 }
 
 .about-title{
@@ -24,7 +30,22 @@ text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #FCFCFC;
+@include tablet {
+    font-size: 34px;
+    line-height: calc(42 / 34);
 }
+@include desctop {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+}
+}
+.box-cow-item{
+  @include tablet{
+    display: flex;
+    margin-top: 72px;
+  }
+}
+
 
 .about-picture-box{
     width: 280px;
@@ -68,7 +89,7 @@ background: #F8D24E;
 border-radius: 10px;
 border: none;
 padding: 12px 34px;
-margin: 0 auto;
+margin: 0 auto 60px;
 font-style: normal;
 font-weight: 600;
 font-size: 14px;
@@ -83,19 +104,24 @@ color: #000000;
     margin-left: 8px;
 }
 
-.about-benefits{
-    margin: 0 auto;
-}
-
-.benefits-item{
-    margin: 0 auto;
-}
-
 .icon-benefuts{
     background-color: #F8D24E;
     border-radius: 50%;
     padding: 5px;
-    margin: 0 auto;
+    display: block;
+    margin: 0 auto 16px;
+}
+
+.benefits-number{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(44 / 36);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    margin-bottom: 16px;
 }
 
 .benefits-text{
@@ -105,15 +131,6 @@ font-size: 12px;
 line-height: 170%;
 text-align: center;
 color: #FCFCFC;
+margin-bottom: 28px;
 }
 
-.benefits-number{
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: calc(44 / 36);
-text-align: center;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: #FCFCFC;
-}
