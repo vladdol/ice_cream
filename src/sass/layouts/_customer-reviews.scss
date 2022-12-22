@@ -1,30 +1,27 @@
-
 .customer-reviews {
   padding-left: 20px;
   padding-right: 20px;
 
-  background-image: url(./images/customer/backgroud_mobile.jpg);
+  background-image: url(../images/customer/backgroud_mobile.jpg);
 
   background-position: center;
 
   background-repeat: no-repeat;
   background-size: cover;
 
-   @include retina {
-    background-image: url(./images/customer/backgroud_mobile-2x.jpg);
+  @include retina {
+    background-image: url(../images/customer/backgroud_mobile-2x.jpg);
   }
   @include tablet {
-    // padding: 272px 100px 238px;
-    background-image: url(./images/customer/backgroud_tablet.jpg);
+    background-image: url(../images/customer/backgroud_tablet.jpg);
     @include retina {
-      background-image: url(./images/customer/background_tablet-2x.jpg);
+      background-image: url(../images/customer/background_tablet-2x.jpg);
     }
   }
   @include desctop {
-    // padding-bottom: 208px;
-    background-image: url(./images/customer/backgroud_desktop.jpg);
+    background-image: url(../images/customer/backgroud_desktop.jpg);
     @include retina {
-      background-image: url(./images/customer/backgroud_desktop-2x.jpg);
+      background-image: url(../images/customer/backgroud_desktop-2x.jpg);
     }
   }
 }
