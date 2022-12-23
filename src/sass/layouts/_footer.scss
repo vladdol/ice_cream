@@ -27,4 +27,16 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+
+    &.locations {
+        color: #131313;
+        background-color: #F8D24E;
+        border: none;
+    }
+
+    &.franchise {
+        color: #000000;
+        background-color: inherit;
+        border: 2px solid #F8D24E;
+    }
 }
