@@ -1,0 +1,107 @@
+<div class="backdrop is-hidden" data-ingredients>
+  <div class="modal-ingredients">
+    <button class="modal-ingredients__closer" data-ingredients-close>
+      <svg class="modal-ingredients__svg" width="20" height="20">
+        <use href="../src/images/symbol-defs.svg#close-modal"></use>
+      </svg>
+    </button>
+    <h2 class="modal-ingredients__title">Chololate icecream</h2>
+
+    <!-- modal img -->
+    <div class="modal-ingredients__box">
+      <div class="modal-ingredients__elips"></div>
+      <img
+        class="modal-ingredients__img"
+        srcset="
+          ./images/modals/modal-ingredients/modal-ingredients-320@1x.png 132w,
+          ./images/modals/modal-ingredients/modal-ingredients-320@2x.png 264w,
+          ./images/modals/modal-ingredients/modal-ingredients-320@3x.png 396w
+        "
+        sizes="(min-width:320px) 132px, 100vw"
+        src="./images/modals/modal-ingredients/modal-ingredients-320@1x.png"
+        alt="морозиво"
+        width="132"
+        heigh="132"
+      />
+    </div>
+
+    <!-- modal  switch-->
+    <ul class="modal-ingredients__list">
+      <li class="modal-ingredients__item">
+        <button type="button" class="modal-ingredients__button">320</button>
+        <p class="modal-ingredients__name">kcal</p>
+      </li>
+      <li class="modal-ingredients__item">
+        <button type="button" class="modal-ingredients__button">4g</button>
+        <p class="modal-ingredients__name">Prote...</p>
+      </li>
+      <li class="modal-ingredients__item">
+        <button type="button" class="modal-ingredients__button">8,2g</button>
+        <p class="modal-ingredients__name">Fats</p>
+      </li>
+      <li class="modal-ingredients__item">
+        <button type="button" class="modal-ingredients__button">40,4g</button>
+        <p class="modal-ingredients__name">Carbs</p>
+      </li>
+    </ul>
+
+    <!-- list -->
+    <h3 class="modal-ingredients__subtitle">Ingredients</h3>
+    <ul class="ingredients">
+      <li class="ingredients__item">
+        <p class="ingredients__name">Milk</p>
+        <p class="ingredients__weight">100ml</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__name">Belgian chocolate</p>
+        <p class="ingredients__weight">20g</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__name">Cream</p>
+        <p class="ingredients__weight">150 ml</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__name">Cocoa powder</p>
+        <p class="ingredients__weight">30g</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__name">Sugar</p>
+        <p class="ingredients__weight">40g</p>
+      </li>
+      <li class="ingredients__item">
+        <p class="ingredients__name">Vanilla sugar</p>
+        <p class="ingredients__weight">10g</p>
+      </li>
+    </ul>
+
+    <!-- form -->
+    <form class="ingredients__form">
+      <label for="ngredients__label">
+        <input
+          type="text"
+          class="ingredients__input"
+          placeholder="Name"
+          name="user_name"
+          required
+        />
+      </label>
+      <label for="ngredients__label">
+        <input
+          type="text"
+          class="ingredients__input"
+          placeholder="Phone"
+          name="user_phone"
+          required
+        />
+      </label>
+      <textarea
+        name="user_comment"
+        class="ingredients__textarea"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="header__buy-now ingredients__button">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+<div class="backdrop is-hidden" data-franchise>
+  <div class="modal-franchise">
+    <button class="modal-franchise__closer" data-franchise-close>
+      <svg class="modal-franchise__svg" width="20" height="20">
+        <use href="../src/images/symbol-defs.svg#close-modal"></use>
+      </svg>
+    </button>
+    <h2 class="modal-franchise__title">
+      Thank you for your interest in owning an Ice Cream shop
+    </h2>
+
+    <p class="modal__franchise-text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+
+    <!-- form -->
+    <form class="product__form">
+      <label for="product__label">
+        <input
+          type="text"
+          class="product__input"
+          placeholder="Name"
+          name="user_name"
+          required
+        />
+      </label>
+      <label for="product__label">
+        <input
+          type="number"
+          class="product__input"
+          placeholder="Phone"
+          name="user_phone"
+          required
+        />
+      </label>
+      <label for="product__label">
+        <input
+          type="email"
+          class="product__input"
+          placeholder="Email"
+          name="user_phone"
+          required
+        />
+      </label>
+      <textarea
+        name="user_comment"
+        class="product__textarea"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="header__buy-now product__button">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
