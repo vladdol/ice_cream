@@ -17,6 +17,7 @@
     width: 196px;
     height: 42px;
     border-radius: 10px;
+    fill: #000000;
 
     font-family: 'Montserrat';
     font-weight: 600;
@@ -32,6 +33,20 @@
         color: #131313;
         background-color: #F8D24E;
         border: none;
+    }
+
+    &.locations:hover {
+        color: #000000;
+        background-color: #0A8817;
+    }
+
+    &.locations:focus {
+        color: #ffffff;
+        fill: #ffffff;
+    }
+
+    &.locations:disabled {
+        background-color: #ABABAB;
     }
 
     &.franchise {
