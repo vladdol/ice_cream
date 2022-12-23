@@ -1,9 +1,8 @@
 .natural-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-image: url(../images/natural/Backgroud-mobile.jpg);
 }
-
-// .natural-container {
-// }
 
 .pretitle {
   font-weight: 800;
@@ -25,7 +24,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #131313;
-  margin-bottom: 148px;
+  margin-bottom: 40px;
 }
 
 .natural-list {
@@ -34,9 +33,6 @@
   align-items: center;
   gap: 60px;
 }
-
-// .list {
-// }
 
 .natural-item {
   width: 280px;
@@ -52,13 +48,6 @@
   border-radius: 50%;
   z-index: 3;
   margin: 0 auto;
-}
-.img-cream::before {
-  position: absolute;
-  display: block;
-  width: 200px;
-  height: 200px;
-  background-image: url(../images/natural/Ellipse\ 10.png);
 }
 
 .wrapper-cream {
