@@ -10,7 +10,7 @@
 }
 
 .section-buttons {
-    margin: 60px auto;
+    margin: 60px auto 120px;
 }
 
 .button-footer {
@@ -39,4 +39,10 @@
         background-color: inherit;
         border: 2px solid #F8D24E;
     }
+}
+
+.button-footer-icon {
+    width: 12px;
+    height: 12px;
+    margin: 0 0 0 4px;
 }
