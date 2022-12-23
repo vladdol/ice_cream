@@ -1,8 +1,10 @@
 .customer-reviews {
+  
   padding-left: 20px;
   padding-right: 20px;
+  
 
-  background-image: url(../images/customer/backgroud_mobile.jpg);
+  background-image: url('../images/customer/background_mobile.jpg');
 
   background-position: center;
 
@@ -10,18 +12,20 @@
   background-size: cover;
 
   @include retina {
-    background-image: url(../images/customer/backgroud_mobile-2x.jpg);
+    background-image: url('../images/customer/background_mobile-2x.jpg');
   }
   @include tablet {
-    background-image: url(../images/customer/backgroud_tablet.jpg);
+    // padding: 272px 100px 238px;
+    background-image: url('../images/customer/background_tablet.jpg');
     @include retina {
-      background-image: url(../images/customer/background_tablet-2x.jpg);
+      background-image: url('../images/customer/background_tablet-2x.jpg');
     }
   }
   @include desctop {
-    background-image: url(../images/customer/backgroud_desktop.jpg);
+    // padding-bottom: 208px;
+    background-image: url('../images/customer/background_desktop.jpg');
     @include retina {
-      background-image: url(../images/customer/backgroud_desktop-2x.jpg);
+      background-image: url('../images/customer/background_desktop-2x.jpg');
     }
   }
 }
