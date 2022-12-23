@@ -1,0 +1,131 @@
+.natural-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(../images/natural/Backgroud-mobile.jpg);
+}
+
+.pretitle {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  text-align: center;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 12px;
+}
+
+.natural-title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 40px;
+}
+
+.natural-list {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.natural-item {
+  width: 280px;
+}
+
+.img-cream {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  z-index: 3;
+  margin: 0 auto;
+}
+.img-cream::before {
+  background-image: url(../images/natural/Ellipse\ 10.png);
+}
+
+.wrapper-cream {
+  z-index: 1;
+  margin-top: 111px;
+  background-color: #aec6a5;
+  border-radius: 24px;
+  padding: 123px 0 16px;
+  height: 420px;
+}
+
+.img-coffee {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  z-index: 3;
+  margin: 0 auto;
+}
+.wrapper-coffee {
+  z-index: 1;
+  margin-top: 111px;
+  background-color: #efd478;
+  border-radius: 24px;
+  padding: 123px 0 16px;
+  height: 420px;
+}
+
+.img-milkshakes {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  z-index: 3;
+  margin: 0 auto;
+}
+.wrapper-milkshakes {
+  z-index: 1;
+  margin-top: 111px;
+  background-color: #d6936d;
+  border-radius: 24px;
+  padding: 123px 0 16px;
+  height: 420px;
+}
+
+.item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 48px;
+}
+
+.item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+
+.item-button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  margin: 0 auto;
+  margin-top: 111px;
+}
