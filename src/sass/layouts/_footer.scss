@@ -72,6 +72,8 @@
 
 .section-footer {
     margin: 0 0 60px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-title {
@@ -96,6 +98,7 @@
     margin: 0 0 40px;
     padding: 0;
     display: flex;
+    justify-content: flex-end;
     gap: 30px;
 }
 
