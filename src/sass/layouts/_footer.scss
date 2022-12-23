@@ -1,0 +1,30 @@
+.footer {
+
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.section-buttons {
+    margin: 60px auto;
+}
+
+.button-footer {
+    width: 196px;
+    height: 42px;
+    border-radius: 10px;
+
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
