@@ -90,7 +90,7 @@
     margin: 0;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
   }
   @include desctop {
     margin: 0;
@@ -208,6 +208,12 @@
   }
 
   @include tablet {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.87;
+    white-space: nowrap;
+  }
+  @include desctop {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
