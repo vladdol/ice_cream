@@ -14,16 +14,19 @@
   justify-content: center;
 
   @include tablet {
+    margin: 40px 0 40px;
     display: flex;
     align-items: center;
   }
   @include desctop {
+    margin: 60px 0 120px;
     display: flex;
     align-items: center;
   }
 }
 
 .button-footer {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +39,14 @@
   line-height: 1.29;
 
   @include tablet {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  @include desctop {
+    margin: 0;
     display: flex;
     align-items: center;
     text-align: center;
@@ -58,6 +69,9 @@
     }
     &:disabled {
       background-color: #ababab;
+    }
+    @include tablet {
+        margin: 0;
     }
   }
 
@@ -142,6 +156,7 @@
     height: 76px;
 
     @include tablet {
+      margin-bottom: 0;
       font-weight: 700;
       font-size: 48px;
       line-height: 1.22;
