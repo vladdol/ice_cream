@@ -1,3 +1,7 @@
+.about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 .title-box{
     width: 210px;
@@ -51,18 +55,60 @@ margin-bottom: 20px;
   }
 }
 
+// .modal-products__box {
+//     width: 132px;
+//     height: 132px;
+//     border-radius: 50%;
+//     margin-left: auto;
+//     margin-right: auto;
+//     position: relative;
+//   }
+  
+//   .modal-products__img {
+//     width: 100%;
+//     height: auto;
+//   }
+  
+//   .modal-products__elips {
+//     position: absolute;
+//     bottom: -7px;
+//     left: 0;
+//     height: 132px;
+//     width: 132px;
+//     border-radius: 50%;
+//     background-color: rgba(156, 190, 143, 0.7);
+//     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+//     z-index: -1;}
+  
+
 .about-picture-box{
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
 .cow-shadow{
-    background-color: #F8D24E;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    height: 132px;
+    width: 132px;
+    border-radius: 50%;
+    background-color: rgba(248, 210, 78, 0.7);
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    z-index: -1;
 }
 
 .picture-cow{
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
 }
