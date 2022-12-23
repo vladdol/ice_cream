@@ -17,8 +17,7 @@
   left: 50%;
   height: 217px;
   bottom: 0;
-
-  transform: translate(-40%);
+  transform: translate(-50%);
 
   @include tablet {
     transform: none;

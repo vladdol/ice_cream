@@ -1,0 +1,132 @@
+// general
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  opacity: 100%;
+  z-index: 3;
+  overflow-y: auto;
+
+  transition: opacity 250ms linear;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+.modal-franchise {
+  position: relative;
+  background-color: #fff;
+  width: 280px;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  left: 50%;
+  top: 20px;
+  z-index: 5;
+  padding: 28px 20px;
+
+  transform: translateX(-50%);
+
+  @include tablet {
+    width: 568px;
+    padding: 32px 40px;
+  }
+}
+
+.modal-franchise__closer {
+  padding: 0;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-franchise__svg {
+  fill: black;
+
+  transition: fill 250ms linear;
+
+  .modal-franchise__closer:hover &,
+  .modal-franchise__closer:focus & {
+    fill: $accent-color;
+  }
+}
+
+.modal-franchise__title {
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #131313;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.4;
+    width: 322px;
+  }
+}
+
+.modal__franchise-text {
+  font-weight: 400;
+  display: block;
+  line-height: calc(20 / 14);
+  color: #131313;
+}
+
+// form
+.product__form {
+  margin-top: 24px;
+}
+
+.product__input,
+.product__textarea {
+  width: 100%;
+  height: 42px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  padding: 11px 10.43px;
+  outline: transparent;
+  margin-left: auto;
+  margin-right: auto;
+
+  &::placeholder {
+    font-weight: 400;
+    line-height: calc(20 / 14);
+    color: #131313;
+  }
+
+  &:focus {
+    border-color: $accent-color;
+  }
+
+  @include tablet {
+    width: 368px;
+    display: flex;
+  }
+}
+
+.product__textarea {
+  height: 84px;
+  resize: none;
+  margin-bottom: 24px;
+}
+
+.product__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

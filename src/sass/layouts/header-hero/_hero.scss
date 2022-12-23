@@ -73,6 +73,7 @@
 }
 
 .hero__question {
+  display: inline-block;
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
@@ -81,6 +82,7 @@
   text-align: center;
   text-decoration-line: underline;
   color: $accent-color;
+  // cursor: url(../images/cursor/Cursor@1x.png), auto;
 
   margin-left: 12px;
 
