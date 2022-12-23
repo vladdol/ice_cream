@@ -1,0 +1,101 @@
+<div class="backdrop is-hidden" data-product-card>
+  <div class="modal-products">
+    <button class="modal-products__closer" data-product-card-close>
+      <svg class="modal-products__svg" width="20" height="20">
+        <use href="../src/images/symbol-defs.svg#close-modal"></use>
+      </svg>
+    </button>
+    <h2 class="modal-products__title">Buy now</h2>
+
+    <!-- modal img  -->
+    <div class="gap-box">
+      <div class="modal-products__box">
+        <img
+          class="modal-products__img"
+          srcset="
+            ./images/modals/modal-products/modal-products-320-01@1x.png 132w,
+            ./images/modals/modal-products/modal-products-320-01@2x.png 264w,
+            ./images/modals/modal-products/modal-products-320-01@3x.png 396w
+          "
+          sizes="(min-width:320px) 132px, 100vw"
+          src="./images/modals/modal-products/modal-products-320-01@1x.png"
+          alt="морозиво"
+          width="132"
+          heigh="132"
+        />
+        <div class="modal-products__elips"></div>
+        <div class="modal-products__box-title">
+          <p class="modal-products__name">ice cream</p>
+        </div>
+      </div>
+      <div class="modal-products__box">
+        <img
+          class="modal-products__img"
+          srcset="
+            ./images/modals/modal-products/modal-products-320-02@1x.png 132w,
+            ./images/modals/modal-products/modal-products-320-02@2x.png 264w,
+            ./images/modals/modal-products/modal-products-320-02@3x.png 396w
+          "
+          sizes="(min-width:320px) 132px, 100vw"
+          src="./images/modals/modal-products/modal-products-320-02@1x.png"
+          alt="морозиво"
+          width="132"
+          heigh="132"
+        />
+        <div class="modal-products__elips"></div>
+        <div class="modal-products__box-title">
+          <p class="modal-products__name">ice cream</p>
+        </div>
+      </div>
+      <div class="modal-products__box">
+        <img
+          class="modal-products__img"
+          srcset="
+            ./images/modals/modal-products/modal-products-320-03@1x.png 132w,
+            ./images/modals/modal-products/modal-products-320-03@2x.png 264w,
+            ./images/modals/modal-products/modal-products-320-03@3x.png 396w
+          "
+          sizes="(min-width:320px) 132px, 100vw"
+          src="./images/modals/modal-products/modal-products-320-03@1x.png"
+          alt="морозиво"
+          width="132"
+          heigh="132"
+        />
+        <div class="modal-products__elips"></div>
+        <div class="modal-products__box-title">
+          <p class="modal-products__name">ice cream</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- form -->
+    <form class="product__form">
+      <label for="product__label">
+        <input
+          type="text"
+          class="product__input"
+          placeholder="Name"
+          name="user_name"
+          required
+        />
+      </label>
+      <label for="product__label">
+        <input
+          type="text"
+          class="product__input"
+          placeholder="Phone"
+          name="user_phone"
+          required
+        />
+      </label>
+      <textarea
+        name="user_comment"
+        class="product__textarea"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="header__buy-now product__button">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

@@ -10,16 +10,18 @@
 
         <ul class="nav__list">
           <ul class="nav__item">
-            <a href="" class="nav__link">Home</a>
+            <a class="nav__link">Home</a>
           </ul>
           <ul class="nav__item">
-            <a href="" class="nav__link">How it’s made?</a>
+            <a class="nav__link" data-read-more-open>How it’s made?</a>
           </ul>
           <ul class="nav__item">
-            <a href="" class="nav__link">Our products</a>
+            <a class="nav__link" data-product-card-open>Our products</a>
           </ul>
           <ul class="nav__item">
-            <a href="" class="nav__link">Contact</a>
+            <a type="button" class="nav__link" data-our-location-modal-open
+              >Contact</a
+            >
           </ul>
         </ul>
       </nav>
@@ -28,7 +30,12 @@
           <use href="../src/images/symbol-defs.svg#burger"></use>
         </svg>
       </button>
-      <button class="header__buy-now">Buy-now ></button>
+      <button class="header__buy-now" data-ingredients-open>
+        Buy-now
+        <svg class="single-right" width="12" height="12">
+          <use href="./images/symbol-defs.svg#single-right"></use>
+        </svg>
+      </button>
     </div>
 
     <!-- hero -->
@@ -36,7 +43,7 @@
       <h1 class="hero__title">ice cream<br />made with<br />passion</h1>
       <div class="hero__box">
         <button class="hero__button">Products</button>
-        <a href="" class="hero__question">How it’s made?</a>
+        <a class="hero__question">How it’s made?</a>
       </div>
 
       <!-- features -->
@@ -60,7 +67,7 @@
           ./images/footer-hero/plate-ice-cream-1200@2x.png  450w,
           ./images/footer-hero/plate-ice-cream-1200@3x.png 4675w
         "
-        sizes="(max-width:1200px) 225px,(max-width:768px) 152px, 100vw"
+        sizes="(min-width:1200px) 225px,(min-width:768px) 152px, 100vw"
         src="./images/footer-hero/ice-cream-480@1x.png"
         alt="морозиво"
       />
@@ -69,7 +76,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <button class="plate-container__button">
+        <button class="plate-container__button" data-franchise-open>
           <svg class="plate-container__arrow" width="40" height="16">
             <use href="../src/images/symbol-defs.svg#arrow"></use>
           </svg>
@@ -92,7 +99,7 @@
           ./images/footer-hero/ice-cream-1200@2x.png  912w,
           ./images/footer-hero/ice-cream-1200@3x.png 1368w
         "
-        sizes="(max-width:1200px) 456px, (max-width:768px) 268px, (max-width:479px) 177px, 100vw"
+        sizes="(min-width:1200px) 456px, (min-width:768px) 268px, (min-width:479px) 177px, 100vw"
         src="./images/footer-hero/ice-cream-480@1x.png"
         alt="морозиво"
       />
@@ -110,7 +117,7 @@
       class="hero-images__svg hero-images__svg--1"
       alt="points"
       src="./images/footer-hero/points/points-320@1x.png"
-      sizes="(max-width:320px) 320px, 100vw"
+      sizes="(min-width:320px) 320px, 100vw"
     />
     <img
       srcset="
@@ -121,7 +128,7 @@
       class="hero-images__svg hero-images__svg--3"
       alt="points"
       src="./images/footer-hero/points/points-768@1x.png"
-      sizes="(max-width:768px) 768px, 100vw"
+      sizes="(min-width:768px) 768px, 100vw"
     />
     <img
       srcset="
@@ -132,7 +139,7 @@
       class="hero-images__svg hero-images__svg--5"
       alt="points"
       src="./images/footer-hero/points/points-1200@1x.png"
-      sizes="(max-width:1200px) 1200px, 100vw"
+      sizes="(min-width:1200px) 1200px, 100vw"
     />
   </div>
 </header>

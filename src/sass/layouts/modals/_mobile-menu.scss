@@ -59,6 +59,7 @@
 .nav-menu {
   text-align: center;
   margin-top: 140px;
+  margin-bottom: 110px;
 }
 
 .nav-menu__item:not(:last-child) {
@@ -70,6 +71,7 @@
   font-size: 32px;
   line-height: calc(39 / 32);
   color: #fcfcfc;
+
 
   transition: color 250ms linear;
 
@@ -86,15 +88,19 @@
 
 .mobile-menu__button {
   @include min-tablet {
-    display: block;
+    position: relative;
+    display: flex;
+    align-items: center;
 
     margin-top: auto;
     margin-bottom: 64px;
     margin-left: auto;
     margin-right: auto;
+    min-height: 42px;
   }
 
-  @include tablet{
+  @include tablet {
     display: none;
   }
 }
+

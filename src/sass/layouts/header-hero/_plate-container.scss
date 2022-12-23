@@ -16,14 +16,6 @@
   width: 152px;
   height: 152px;
   z-index: 2;
-  position:sticky;
-
-  // transition: width 250ms linear, height 250ms linear;
-  // &:hover,
-  // &:focus {
-  //   width: 160px;
-  //   height: 160px;
-  // }
 
   @include desctop {
     width: 225px;
