@@ -33,26 +33,34 @@
         color: #131313;
         background-color: #F8D24E;
         border: none;
-    }
-
-    &.locations:hover {
-        color: #000000;
-        background-color: #0A8817;
-    }
-
-    &.locations:focus {
-        color: #ffffff;
-        fill: #ffffff;
-    }
-
-    &.locations:disabled {
-        background-color: #ABABAB;
+        &:hover {
+            color: #000000;
+            background-color: #0A8817;
+        }
+        &:focus {
+            color: #ffffff;
+            fill: #ffffff;
+        }
+        &:disabled {
+            background-color: #ABABAB;
+        }
     }
 
     &.franchise {
         color: #000000;
         background-color: inherit;
         border: 2px solid #F8D24E;
+        &:hover {
+            border-color: #0A8817;
+        }
+        &:focus {
+            border-color: #0A8817;
+            color: #ffffff;
+            fill: #ffffff;
+        }
+        &:disabled {
+            border-color: #ABABAB;
+        }
     }
 }
 
