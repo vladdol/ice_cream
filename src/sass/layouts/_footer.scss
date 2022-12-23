@@ -14,7 +14,10 @@
   justify-content: center;
 
   @include tablet {
-    margin: 60px auto 120px;
+    display: flex;
+    align-items: center;
+  }
+  @include desctop {
     display: flex;
     align-items: center;
   }
@@ -88,12 +91,14 @@
     
   @include tablet {
     margin: 0;
+    padding-bottom: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   @include desctop {
     margin: 0;
+    padding-bottom: 60px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -116,6 +121,7 @@
       font-size: 26px;
       line-height: 1.23;
       letter-spacing: 0.04em;
+      margin-bottom: 8px;
     }
 
     @include desctop {
@@ -123,6 +129,7 @@
       font-size: 30px;
       line-height: 1.23;
       letter-spacing: 0.04em;
+      margin-bottom: 14px;
     }
   }
   &.big {
@@ -163,6 +170,10 @@
   margin-bottom: 20px;
 
   @include tablet {
+    margin: 0 0 34px;
+    gap: 30px;
+  }
+  @include desctop {
     margin: 0 0 40px;
     gap: 30px;
   }
