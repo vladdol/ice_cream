@@ -91,3 +91,28 @@
         letter-spacing: 0.06em;
     }
 }
+
+.footer-list {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links {
+    width: 34px;
+    height: 34px;
+    fill: #84A178;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8D24E;
+    border-radius: 50%;
+}
+
+.icon-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20px;
+    height: 20px;
+}
