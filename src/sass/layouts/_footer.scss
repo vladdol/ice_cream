@@ -101,7 +101,7 @@
     padding-bottom: 60px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: baseline;
   }
 }
 
@@ -114,7 +114,6 @@
     font-size: 18px;
     line-height: 1.22;
     text-transform: uppercase;
-    margin-bottom: 16px;
 
     @include tablet {
       font-weight: 700;
@@ -211,7 +210,6 @@
   line-height: 1.87;
   text-align: right;
 
-  margin-bottom: 40px;
   &.text {
     color: #131313;
   }
