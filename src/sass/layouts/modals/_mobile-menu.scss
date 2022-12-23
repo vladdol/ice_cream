@@ -6,6 +6,9 @@
   background-color: #85a279;
   padding: 12px 32px;
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
 
   transform: translateX(100%);
   transition: transform 250ms linear;
@@ -32,7 +35,7 @@
   }
 }
 
-.menu__closer {
+.mobile-menu__closer {
   position: absolute;
   padding: 0;
   top: 32px;
@@ -41,8 +44,15 @@
   background-color: transparent;
 }
 
-.menu__svg-closer {
+.mobile-menu__svg-closer {
   fill: #fff;
+
+  transition: fill 250ms linear;
+
+  .mobile-menu__closer:hover &,
+  .mobile-menu__closer:focus & {
+    fill: $accent-color;
+  }
 }
 
 // nav-menu
@@ -71,5 +81,20 @@
   @include tablet {
     font-size: 48px;
     line-height: calc(59 / 48);
+  }
+}
+
+.mobile-menu__button {
+  @include min-tablet {
+    display: block;
+
+    margin-top: auto;
+    margin-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include tablet{
+    display: none;
   }
 }

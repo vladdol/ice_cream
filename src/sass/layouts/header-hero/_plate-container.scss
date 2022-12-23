@@ -15,7 +15,15 @@
   display: block;
   width: 152px;
   height: 152px;
-  z-index: 1000;
+  z-index: 2;
+  position:sticky;
+
+  // transition: width 250ms linear, height 250ms linear;
+  // &:hover,
+  // &:focus {
+  //   width: 160px;
+  //   height: 160px;
+  // }
 
   @include desctop {
     width: 225px;
@@ -43,7 +51,6 @@
   font-size: 12px;
   line-height: calc(17 / 12);
   color: #fcfcfc;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   @include desctop {
     font-size: 12px;
@@ -69,8 +76,7 @@
   transition: fill 250ms linear;
 
   .plate-container__button:hover &,
-  .plate-container__button:focus &{
+  .plate-container__button:focus & {
     fill: $accent-color;
-
   }
 }

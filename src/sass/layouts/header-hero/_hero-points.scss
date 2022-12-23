@@ -1,8 +1,27 @@
+.container-mobile-points {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+  @include min-tablet {
+    margin-top: 237px;
+  }
+  @include tablet {
+    margin-top: 12px;
+  }
+  @include desctop {
+    margin-top: 67px;
+  }
+}
+
 .hero-images__svg {
   fill: $accent-color;
   position: absolute;
   bottom: 0;
   z-index: -1;
+  left: 50%;
+
+  transform: translatex(-50%);
 }
 
 .hero-images__svg--1 {
@@ -17,7 +36,7 @@
 }
 
 .hero-images__svg--3 {
-  width: 769px;
+  width: 768px;
 
   @include min-tablet {
     display: none;
@@ -35,45 +54,3 @@
     display: none;
   }
 }
-
-
-// future-animation
-// .hero-images__svg {
-//   fill: $accent-color;
-//   position: absolute;
-//   bottom: 0;
-// }
-
-// .hero-images__svg--1 {
-//   width: 107px;
-//   height: 34px;
-//   left: -15px;
-
-//   @include tablet {
-//     display: none;
-//   }
-// }
-
-// .hero-images__svg--3 {
-//   width: 110px;
-//   height: 34px;
-//   left: -15px;
-
-//   @include min-tablet {
-//     display: none;
-//   }
-
-//   @include desctop {
-//     display: none;
-//   }
-// }
-
-// .hero-images__svg--5 {
-//   width: 110px;
-//   height: 34px;
-//   left: -15px;
-
-//   @include min-desctop {
-//     display: none;
-//   }
-// }
