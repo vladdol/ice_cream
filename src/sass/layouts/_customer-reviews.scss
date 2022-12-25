@@ -4,7 +4,7 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 178px;
-  padding-bottom: 80px;
+  padding-bottom: 350px;
 
   background-image: url('../images/customer/background_mobile.jpg');
 
@@ -30,11 +30,6 @@
       background-image: url('../images/customer/background_desktop-2x.jpg');
     }
   }
-}
-
-.customer-reviews-list {
-  // display: flex;
-  // flex-direction: column;
 }
 
 .customer-reviews-item {
@@ -132,19 +127,13 @@ height: 100%;
   font-weight: 500;
   font-size: 20px;
   line-height: 186%;
-
   text-align: center;
-
   color: $black-color;
    @include tablet {
-   
-    
     font-size: 16px;
-    
   }
 
   @include desctop {
-  
     font-weight: 500;
     font-size: 16px;
     line-height: 186%;
@@ -155,4 +144,9 @@ height: 100%;
   width: 12px;
   height: 12px;
   background-color: $green-color;
+}
+
+.swiper-pagination{
+  margin-bottom: 320px;
+
 }
