@@ -1,113 +1,110 @@
-
 .boxes{
-   margin-top: -290px;
-   z-index: 100;
-   position: relative;
-    @include tablet{
-        display: flex;
-        gap: 16px;
-    }
-}
-
-.contact-box{
-    padding: 40px 32px 24px;
-    background-color: #FCFCFC;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-    width: 100%;
-    margin: 0 auto;
-     max-width: 280px;
-     max-height: 412px;
-     margin-bottom: 15px;
+    margin-top: -290px;
+    z-index: 100;
+    position: relative;
      @include tablet{
-        max-width: 224px;
-         max-height: 537px;
+         display: flex;
+         gap: 16px;
      }
-     @include desctop{
-        max-width: 368px;
-        max-height: 542px;
+ }
+ 
+ .contact-box{
+     padding: 40px 32px 24px;
+     background-color: #FCFCFC;
+     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+     border-radius: 24px;
+     width: 100%;
+     margin: 0 auto;
+      max-width: 280px;
+      max-height: 412px;
+      margin-bottom: 15px;
+      @include tablet{
+         max-width: 224px;
+          max-height: 537px;
+      }
+      @include desctop{
+         max-width: 368px;
+         max-height: 542px;
+      }
+ }
+ 
+ .contact-buttom{
+ width: 80px;
+ height: 22px;
+ background-color: #F8D24E;
+ border-radius: 4px;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 12px;
+ line-height: calc(14 / 12);
+ align-items: center;
+ text-align: center;
+ border: none;
+ text-transform: uppercase;
+ color: #131313;
+ margin-bottom: 20px;
+ }
+ 
+ .foodtruck{
+ width: 130px;
+ height: 22px;
+ }
+ 
+ .item-country{
+ font-style: normal;
+ font-weight: 500;
+ font-size: 12px;
+ line-height: calc(22 / 12);
+ letter-spacing: 0.04em;
+ color: #131313;
+ margin-bottom: 8px;
+ }
+ 
+ .item-address{
+ font-style: normal;
+ font-weight: 500;
+ font-size: 12px;
+ line-height: calc(22 / 12);
+ letter-spacing: 0.04em;
+ color: #D6936D;
+ margin-bottom: 24px;
+ max-width: 230px;
+ }
+ 
+ .line{
+ width: 90%;
+ height: 0px;
+ left: 52px;
+ top: 176px;
+ border: 1px solid #E1E1E1;
+ margin-bottom: 24px;
+ }
+ 
+ .item-day{
+     font-style: normal;
+     font-weight: 500;
+     font-size: 12px;
+     line-height: calc(22 / 12);
+     color: #131313;
+ }
+ 
+ .item-time{
+     font-style: normal;
+     font-weight: 500;
+     font-size: 12px;
+     line-height: calc(22 / 12);
+     color: #ABABAB;
+     &:not(:last-child){
+         margin-bottom: 8px;
      }
-}
-
-.contact-buttom{
-width: 80px;
-height: 22px;
-background-color: #F8D24E;
-border-radius: 4px;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: calc(14 / 12);
-align-items: center;
-text-align: center;
-border: none;
-text-transform: uppercase;
-color: #131313;
-margin-bottom: 20px;
-}
-
-.foodtruck{
-width: 130px;
-height: 22px;
-}
-
-.item-country{
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: calc(22 / 12);
-letter-spacing: 0.04em;
-color: #131313;
-margin-bottom: 8px;
-}
-
-.item-address{
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: calc(22 / 12);
-letter-spacing: 0.04em;
-color: #D6936D;
-margin-bottom: 24px;
-max-width: 230px;
-}
-
-.line{
-width: 90%;
-height: 0px;
-left: 52px;
-top: 176px;
-border: 1px solid #E1E1E1;
-margin-bottom: 24px;
-}
-
-.item-day{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(22 / 12);
-    color: #131313;
-}
-
-.item-time{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(22 / 12);
-    color: #ABABAB;
-    &:not(:last-child){
-        margin-bottom: 8px;
-    }
-}
-
-.item-contact{
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 160%;
-color: #131313;
-gap: 6px;
-}
-
-
-
+ }
+ 
+ .item-contact{
+ font-style: normal;
+ font-weight: 500;
+ font-size: 12px;
+ line-height: 160%;
+ color: #131313;
+ gap: 5px;
+ }
+ 
