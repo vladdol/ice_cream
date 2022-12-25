@@ -1,38 +1,54 @@
+.about {
+  padding-bottom: 0px;
+}
+.gallery-sections {
+    cursor: pointer;
+  position: relative;
+
+  min-height: 64px;
+
+
 .gallery-section {
   max-height: 64px;
+
   display: block;
   margin-left: auto;
   margin-right: auto;
+
   max-width: 280px;
   @include mobile {
     max-width: 480px;
   }
   @include tablet {
     max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-    max-height: 204px;
+
+    min-height: 204px;
   }
   @include desctop {
     max-width: 1200px;
 
-    max-height: 178px;
+    min-height: 178px;
   }
 }
-.gallery-container-wrap {
-  position: relative;
+
+.gallery-container-wrapp {
+  z-index: 10000;
+  position: absolute;
   max-width: 100%;
+
+  padding-right: 15px;
+  padding-left: 15px;
 
   border-radius: 8px;
   border-color: transparent;
 
   transform: translateY(15%);
+
   @include tablet {
     transform: translateY(18%);
-  }
 
-  @include desctop {
-    transform: translateY(19%);
+    padding-right: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -43,8 +59,6 @@
   background-color: transparent;
 }
 .gallery-item {
-  padding-right: 15px;
-  padding-left: 15px;
   max-width: 100%;
   display: flex;
   align-items: center;
@@ -53,6 +67,7 @@
   background-color: transparent;
   border-radius: 8px;
   overflow: hidden;
+
   @include tablet {
     padding-left: 32px;
     padding-right: 32px;
@@ -62,13 +77,22 @@
     padding-left: 93px;
     padding-right: 93px;
   }
-  
+
 }
 
 .gallery-item img {
   display: block;
   max-width: 100%;
-  height: auto;
+  max-height: 130px;
+
   border-radius: 8px;
   background-color: transparent;
+
+  @include tablet {
+    max-height: 327px;
+  }
+
+  @include desctop {
+    max-height: 422px;
+  }
 }
