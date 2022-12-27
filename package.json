@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://RomanXz92.github.io/sass-team",
+  "homepage": "https://vladdol.github.io/ice_cream",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /sass-team/"
+    "build": "parcel build src/*.html --public-url /ice_cream/"
   },
   "repository": {
     "type": "git",
