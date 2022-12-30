@@ -1,0 +1,67 @@
+.natural {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/natural/bg-pic-320@1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/natural/bg-pic-320@2x.png);
+  }
+
+  @include tablet {
+    padding-top: 79px;
+    padding-bottom: 41px;
+
+    background-image: url(../images/natural/bg-pic-768@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/natural/bg-pic-768@2x.png);
+    }
+  }
+
+  @include desctop {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-image: url(../images/natural/bg-pic-1200@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/natural/bg-pic-1200@2x.png);
+    }
+  }
+}
+
+.natural__title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  text-align: center;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 148px;
+
+  @include tablet {
+    margin-bottom: 200px;
+    font-size: 22px;
+    line-height: calc(27 / 22);
+  }
+}
+
+.natural__span {
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  letter-spacing: 0.04em;
+
+  @include tablet {
+    font-size: 34px;
+    line-height: calc(43 / 34);
+  }
+}

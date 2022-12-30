@@ -1,0 +1,60 @@
+.about__flex-container {
+  @include tablet {
+    display: flex;
+    margin-bottom: 60px;
+  }
+}
+
+.about__img-box {
+  width: 279px;
+  height: 278px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  margin-bottom: 40px;
+
+  @include tablet {
+    width: 330px;
+    height: 330px;
+    margin-bottom: 0;
+  }
+
+  @include desctop {
+    width: 490px;
+    height: 490px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.about__img {
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  position: relative;
+}
+
+.about__elips {
+  position: absolute;
+  top: -22px;
+  left: 0;
+  width: 279px;
+  height: 278px;
+  border-radius: 50%;
+  background-color: #f8d24e;
+  z-index: 1;
+
+  @include tablet {
+    width: 330px;
+    height: 330px;
+    top: -26px;
+  }
+
+  @include desctop {
+    width: 490px;
+    height: 490px;
+    top: -39px;
+  }
+}

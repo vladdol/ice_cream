@@ -1,0 +1,84 @@
+.about__icon-container {
+  margin-top: 50px;
+  gap: 28px;
+  @extend %flex-center;
+  flex-direction: column;
+  text-align: center;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 0;
+  }
+
+  @include desctop {
+    gap: 32px;
+  }
+}
+
+.about__ico {
+  @include tablet {
+    width: 152px;
+  }
+
+  @include desctop {
+    width: 368px;
+  }
+}
+
+.about__svg-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f8d24e;
+  @extend %flex-center;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 16px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
+
+.about__ico-name {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(44 / 36);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+
+  @include tablet {
+    font-size: 48px;
+    line-height: calc(59 / 48);
+    text-align: center;
+  }
+}
+
+.about__ico-descriptions {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(20 / 12);
+  color: #fcfcfc;
+  margin-top: 16px;
+
+  @include min-tablet {
+    width: 230px;
+  }
+
+  @include tablet {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    text-align: center;
+  }
+
+  @include desctop {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+    letter-spacing: 0.02em;
+  }
+}
