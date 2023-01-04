@@ -1,0 +1,148 @@
+.footer {
+  position: relative;
+  padding-top: 935px;
+  padding-bottom: 20px;
+
+  @include tablet {
+    padding-top: 278px;
+    padding-bottom: 12px;
+  }
+
+  @include desctop {
+    padding-top: 474px;
+  }
+}
+
+.absolut {
+  position: relative;
+}
+
+.footer-box {
+  position: absolute;
+  top: -353px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  letter-spacing: 0.04em;
+  color: #131313;
+
+  @include tablet {
+    flex-direction: row;
+    top: -299px;
+
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  @include desctop {
+    gap: 32px;
+    top: -128px;
+
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+
+.footer-box__container {
+  width: 280px;
+  padding: 40px 32px 24px 32px;
+  background-color: #fcfcfc;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  @include tablet {
+    width: 224px;
+    padding: 40px 24px 40px 24px;
+  }
+
+  @include desctop {
+    width: 368px;
+    padding: 40px;
+  }
+}
+
+.footer-box__buttom {
+  background: #f8d24e;
+  border-radius: 4px;
+  padding: 4px 22px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #131313;
+  text-transform: uppercase;
+  border: none;
+  cursor: auto;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    padding: 4px 12px;
+  }
+}
+
+.footer-box__item {
+  margin-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+
+  &:not(:first-child) {
+    margin-top: 20px;
+    @include tablet {
+      margin-top: 32px;
+    }
+  }
+
+  &:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  @include tablet {
+    margin-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.footer-box__city {
+  margin-bottom: 8px;
+
+  @include tablet {
+    margin-bottom: 12px;
+  }
+}
+
+.footer-box__city-link {
+  color: #d6936d;
+}
+
+.footer-box__time {
+  color: #ababab;
+
+  &:nth-child(2) {
+    margin-bottom: 8px;
+  }
+}
+
+.address__link {
+  color: #131313;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: #d6936d;
+  }
+}
