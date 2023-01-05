@@ -9,7 +9,8 @@
   min-width: 320px;
   opacity: 100%;
   z-index: 3;
-  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  overflow-y: scroll;
 
   transition: opacity 250ms linear;
 
