@@ -1,0 +1,39 @@
+.advantages {
+  position: relative;
+  padding-top: 178px;
+  padding-bottom: 417px;
+  background-color: #fff;
+  background-repeat: repeat;
+  background-size: contain;
+  background-image: url(../images/natural/bg-pic-320@1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/natural/bg-pic-320@2x.png);
+  }
+
+  @include tablet {
+    padding-bottom: 379px;
+    padding-top: 283px;
+
+    background-image: url(../images/natural/bg-pic-768@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/natural/bg-pic-768@2x.png);
+    }
+  }
+
+  @include desctop {
+    padding-bottom: 228px;
+    padding-top: 464px;
+
+    background-image: url(../images/natural/bg-pic-1200@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/natural/bg-pic-1200@2x.png);
+    }
+  }
+}

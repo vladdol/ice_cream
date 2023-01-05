@@ -1,0 +1,19 @@
+.one .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.one
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 9px);
+}
+
+.one .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.one .swiper-pagination-bullet-active {
+  background: #84a178;
+}
+
+.one .swiper-pagination {
+  position: static;
+}

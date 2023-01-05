@@ -1,0 +1,62 @@
+.swiper-wrapper {
+  margin-bottom: 12px;
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
+
+.advantages__comment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages__avatar {
+  margin-bottom: 32px;
+  border-radius: 50%;
+}
+
+.commentar-box {
+  width: 280px;
+  height: 256px;
+  background-color: #84a178;
+  @extend %flex-center;
+  padding: 35px 39px;
+  border-radius: 10px;
+  margin-bottom: 32px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(31 / 12);
+  color: #fcfcfc;
+
+  @include tablet {
+    width: 705px;
+    height: 138px;
+
+    font-size: 14px;
+    line-height: calc(26 / 14);
+    letter-spacing: 0.04em;
+    border-radius: 24px;
+  }
+
+  @include desctop {
+    width: 968px;
+    height: 138px;
+
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+
+.advantages__name {
+  padding: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(37 / 20);
+  color: #131313;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
