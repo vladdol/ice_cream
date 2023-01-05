@@ -1,8 +1,10 @@
-html{
-  @include desctop{
-    scroll-behavior: smooth;
-  }
-}
+// html {
+//   scroll-behavior: smooth;
+// }
+
+// .mobile-menu.is-open html {
+//   scroll-behavior: auto;
+// }
 
 body {
   margin: 0;
@@ -10,6 +12,7 @@ body {
   color: #212121;
   font-family: 'Montserrat', sans-serif;
   background-color: $green-color;
+  scroll-behavior: smooth;
 }
 
 .container {
